@@ -5,8 +5,6 @@ Tax Easy
 
 Ruby Gem to calculate Taxes.
 
-----------
-
 ### Installation
 
 ```ruby
@@ -14,8 +12,6 @@ gem 'tax_easy', github: 'valencar/tax_easy'
 ```
 
 Run the bundle command to install it.
-
-----------
 
 ### Calculators - Brazil
 
