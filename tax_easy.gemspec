@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = TaxEasy::VERSION
   s.authors     = ["Victor Alencar"]
   s.email       = ["victor.a.alencar@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TaxEasy."
-  s.description = "TODO: Description of TaxEasy."
+  s.homepage    = "https://github.com/valencar/tax_easy"
+  s.summary     = "TaxEasy - Calculate Taxes"
+  s.description = "TaxEasy - Calculate Taxes"
   s.license     = "MIT"
 
   s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
