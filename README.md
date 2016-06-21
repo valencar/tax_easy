@@ -3,12 +3,14 @@ Tax Easy
 
 [![Code Climate](https://codeclimate.com/github/valencar/tax_easy/badges/gpa.svg)](https://codeclimate.com/github/valencar/tax_easy)  [![Travis](https://travis-ci.org/valencar/tax_easy.svg?branch=master)](https://travis-ci.org/valencar/tax_easy)
 
+[![Gem Version](https://badge.fury.io/rb/tax_easy.svg)](https://badge.fury.io/rb/tax_easy)
+
 Ruby Gem to calculate Taxes.
 
 ### Installation
 
 ```ruby
-gem 'tax_easy', github: 'valencar/tax_easy'
+gem 'tax_easy'
 ```
 
 Run the bundle command to install it.
