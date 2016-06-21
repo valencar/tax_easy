@@ -16,13 +16,15 @@ module TaxEasy
         def calculate(loan_value, financing_time_months, interest_rate, loan_date = Date.today)
           balance = loan_value
           installment = installment_value(interest_rate, financing_time_months, loan_value)
-          installment_date = loan_date
+          installment_date = loan_date.next_month
           iof = 0
 
-          financing_time_months.step(1, -1) do |installment_number|
+          financing_time_months.step(1, -1) do |_|
             amortization = installment - interest_part(balance, interest_rate)
 
-            iof += amortization*(@iof_day*(minimal_days(past_days(installment_date, loan_date))))
+            days = past_days(loan_date, installment_date)
+
+            iof += amortization*(@iof_day*(minimal_days(days)))
             iof += amortization*@iof_additional
 
             balance -= amortization
@@ -47,7 +49,7 @@ module TaxEasy
         end
 
         def past_days(start_date, end_date)
-          (start_date - end_date).to_i
+          (end_date - start_date).to_i
         end
 
         def minimal_days(past_days)
