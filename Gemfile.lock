@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tax_easy (0.0.1)
+    tax_easy (0.0.2)
       exonio (~> 0.5.2)
 
 GEM
