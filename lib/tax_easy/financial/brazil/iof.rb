@@ -4,12 +4,10 @@ module TaxEasy
   module Financial
     module Brazil
       class IOF
-        DEFAULT_IOF_DAY = 0.000041
-        DEFAULT_IOF_ADDITIONAL = 0.0038
-
+        
         def initialize(overrides = {})
-          @iof_day = overrides.fetch(:iof_day) { DEFAULT_IOF_DAY }
-          @iof_additional = overrides.fetch(:iof_additional) { DEFAULT_IOF_ADDITIONAL }
+          @iof_day = overrides.fetch(:iof_day) { 0.000041 }
+          @iof_additional = overrides.fetch(:iof_additional) { 0.0038 }
           @installment_calculator = overrides.fetch(:installment_calculator) { TaxEasy::Calculator::Installment.new }
         end
 
