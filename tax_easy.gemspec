@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["victor.a.alencar@gmail.com"]
   s.homepage    = "https://github.com/valencar/tax_easy"
   s.summary     = "TaxEasy - Calculate Taxes"
-  s.description = "TaxEasy - Calculate Taxes"
+  s.description = "TaxEasy - Gem to Calculate Taxes - So feel free to contribute!"
   s.license     = "MIT"
 
   s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
